@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+}
+
+.player {
+    width: 360px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.cover {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-size: 70px;
+}
+
+.song-info {
+    margin: 20px 0;
+}
+
+.song-info h2 {
+    font-size: 22px;
+}
+
+.song-info p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+#progress {
+    flex: 1;
+    cursor: pointer;
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    font-size: 20px;
+}
+
+.controls button:hover {
+    background: #667eea;
+}
+
+#play {
+    width: 60px;
+    height: 60px;
+    background: #667eea;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#volume {
+    flex: 1;
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#playlist {
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#playlist li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #f1f1f1;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+}
+
+#playlist li:hover {
+    background: #ddd;
+}
+
+#playlist li.active {
+    background: #667eea;
+    color: white;
+}
